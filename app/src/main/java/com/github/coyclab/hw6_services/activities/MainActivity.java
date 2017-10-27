@@ -11,11 +11,11 @@ import com.github.coyclab.hw6_services.R;
 public class MainActivity extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button loginButton = (Button) findViewById(R.id.btn_login);
+        final Button loginButton = (Button) findViewById(R.id.btn_login);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override

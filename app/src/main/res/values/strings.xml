@@ -10,4 +10,9 @@
     <string name="incorrect_password">Incorrect password</string>
     <string name="correct_login">Login</string>
     <string name="correct_password">Password</string>
+    <string name="btn_show_control_panel_name">Show control panel</string>
+    <string name="btn_play_name">Play</string>
+    <string name="btn_stop_name">Stop</string>
+    <string name="btn_hide_control_panel_name">Hide control panel</string>
+    <string name="btn_change_style_name">Change style</string>
 </resources>

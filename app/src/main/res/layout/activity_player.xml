@@ -1,10 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.github.coyclab.hw6_services.activities.PlayerActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/btn_show_control_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/btn_show_control_panel_name"
+        android:textAllCaps="true"/>
+
+    <FrameLayout
+        android:id="@+id/control_panel_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingTop="10dp">
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/change_style_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp">
+
+    </FrameLayout>
+
+</LinearLayout>
