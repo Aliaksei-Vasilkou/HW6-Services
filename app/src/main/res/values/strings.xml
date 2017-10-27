@@ -2,8 +2,12 @@
     <string name="app_name">HW6-Services</string>
     <string name="tw_welcome">Welcome!</string>
     <string name="btn_login">LOGIN</string>
-    <string name="tw_continue">Click LOGIN to continue...</string>
+    <string name="tw_continue">Click LOGIN to continue</string>
     <string name="hint_login_name">Login</string>
     <string name="password_hint">Password</string>
     <string name="name_sign_in">Sign in</string>
+    <string name="signed_successfully">Signed in successfully!</string>
+    <string name="incorrect_password">Incorrect password</string>
+    <string name="correct_login">Login</string>
+    <string name="correct_password">Password</string>
 </resources>
