@@ -17,8 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.FragmentsActivity"/>
-        <activity android:name=".activities.PlayerActivity">
-        </activity>
+        <activity android:name=".activities.PlayerActivity"/>
+        <service android:name=".services.PlayerService"/>
     </application>
 
 </manifest>
