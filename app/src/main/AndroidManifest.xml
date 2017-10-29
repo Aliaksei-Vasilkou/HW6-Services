@@ -19,6 +19,7 @@
         <activity android:name=".activities.FragmentsActivity"/>
         <activity android:name=".activities.PlayerActivity"/>
         <service android:name=".services.PlayerService"/>
+        <service android:name=".services.SimpleIntentService"/>
     </application>
 
 </manifest>

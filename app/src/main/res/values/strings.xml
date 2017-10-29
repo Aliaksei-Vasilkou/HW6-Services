@@ -14,6 +14,6 @@
     <string name="btn_play_name">Play</string>
     <string name="btn_stop_name">Stop</string>
     <string name="btn_hide_control_panel_name">Hide control panel</string>
-    <string name="btn_change_style_name">Change style</string>
+    <string name="btn_run_intent_service_name">Run service</string>
     <string name="take_picture">Take a picture</string>
 </resources>

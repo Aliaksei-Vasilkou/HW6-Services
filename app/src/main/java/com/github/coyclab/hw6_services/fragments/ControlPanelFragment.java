@@ -10,8 +10,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.github.coyclab.hw6_services.R;
-import com.github.coyclab.hw6_services.activities.PlayerActivity;
 import com.github.coyclab.hw6_services.services.PlayerService;
+import com.github.coyclab.hw6_services.services.SimpleIntentService;
 
 public class ControlPanelFragment extends Fragment {
 
@@ -25,6 +25,7 @@ public class ControlPanelFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         Button btnPlay = getActivity().findViewById(R.id.btn_play);
         Button btnStop = getActivity().findViewById(R.id.btn_stop);
+        Button btnRunIntentService = getActivity().findViewById(R.id.btn_start_intent_service);
 
         btnPlay.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,6 +38,19 @@ public class ControlPanelFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 getActivity().stopService(new Intent(getActivity(), PlayerService.class));
+            }
+        });
+
+        btnRunIntentService.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myServiceIntent = new Intent(getActivity(), SimpleIntentService.class);
+                getActivity().startService(myServiceIntent.putExtra("First param", "First iteration")
+                        .putExtra("Second param", "Param = 1"));
+                getActivity().startService(myServiceIntent.putExtra("First param", "Second iteration")
+                        .putExtra("Second param", "Param = 2"));
+                getActivity().startService(myServiceIntent.putExtra("First param", "Third iteration")
+                        .putExtra("Second param", "Param = 3"));
             }
         });
         super.onActivityCreated(savedInstanceState);
