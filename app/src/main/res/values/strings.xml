@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">HW6-Services</string>
+    <string name="tw_welcome">Welcome!</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="tw_continue">Click LOGIN to continue</string>
+    <string name="hint_login_name">Login</string>
+    <string name="password_hint">Password</string>
+    <string name="name_sign_in">Sign in</string>
+    <string name="signed_successfully">Signed in successfully!</string>
+    <string name="incorrect_password">Incorrect password</string>
+    <string name="correct_login">Login</string>
+    <string name="correct_password">Password</string>
+    <string name="btn_show_control_panel_name">Show control panel</string>
+    <string name="btn_play_name">Play</string>
+    <string name="btn_stop_name">Stop</string>
+    <string name="btn_hide_control_panel_name">Hide control panel</string>
+    <string name="btn_run_intent_service_name">Run service</string>
+    <string name="take_picture">Take a picture</string>
+    <string name="btn_logout_name">Logout</string>
 </resources>
