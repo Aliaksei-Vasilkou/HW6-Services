@@ -25,9 +25,9 @@ public class FragmentsActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fragments);
 
-        final Button signInButton = (Button) findViewById(R.id.btn_sign_in);
-        mLoginEditText = (EditText) findViewById(R.id.edittext_login);
-        mPasswordEditText = (EditText) findViewById(R.id.edittext_password);
+        final Button signInButton = findViewById(R.id.btn_sign_in);
+        mLoginEditText = findViewById(R.id.edittext_login);
+        mPasswordEditText = findViewById(R.id.edittext_password);
 
         signInButton.setOnClickListener(new View.OnClickListener() {
 

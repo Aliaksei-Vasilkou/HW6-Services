@@ -22,29 +22,32 @@ public class ControlPanelFragment extends Fragment {
     }
 
     @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        Button btnPlay = getActivity().findViewById(R.id.btn_play);
-        Button btnStop = getActivity().findViewById(R.id.btn_stop);
-        Button btnRunIntentService = getActivity().findViewById(R.id.btn_start_intent_service);
+    public void onActivityCreated(@Nullable final Bundle savedInstanceState) {
+        final Button btnPlay = getActivity().findViewById(R.id.btn_play);
+        final Button btnStop = getActivity().findViewById(R.id.btn_stop);
+        final Button btnRunIntentService = getActivity().findViewById(R.id.btn_start_intent_service);
 
         btnPlay.setOnClickListener(new View.OnClickListener() {
+
             @Override
-            public void onClick(View view) {
+            public void onClick(final View view) {
                 getActivity().startService(new Intent(getActivity(), PlayerService.class));
             }
         });
 
         btnStop.setOnClickListener(new View.OnClickListener() {
+
             @Override
-            public void onClick(View view) {
+            public void onClick(final View view) {
                 getActivity().stopService(new Intent(getActivity(), PlayerService.class));
             }
         });
 
         btnRunIntentService.setOnClickListener(new View.OnClickListener() {
+
             @Override
-            public void onClick(View view) {
-                Intent myServiceIntent = new Intent(getActivity(), SimpleIntentService.class);
+            public void onClick(final View view) {
+                final Intent myServiceIntent = new Intent(getActivity(), SimpleIntentService.class);
                 getActivity().startService(myServiceIntent.putExtra("First param", "First iteration")
                         .putExtra("Second param", "Param = 1"));
                 getActivity().startService(myServiceIntent.putExtra("First param", "Second iteration")
